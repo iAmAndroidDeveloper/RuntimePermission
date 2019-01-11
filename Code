@@ -1,4 +1,11 @@
 
+  private Activity mActivity;
+  private static final int MY_PERMISSIONS_REQUEST_CODE = 123;
+  public static int ACTION_MANAGE_OVERLAY_PERMISSION_REQUEST_CODE = 5469;
+
+  //in create activity
+  mActivity = this;
+
  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             checkPermission();
 }
